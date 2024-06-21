@@ -204,7 +204,7 @@ def user_stats(df):
     print('-' * 40)
 
 
-def display_raw_data(df):
+def raw_data_display(df):
     """Displays 5 lines of raw data from the dataframe upon user request."""
     start_loc = 0  # Start at the beginning of the dataframe
     while True:
@@ -231,7 +231,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_raw_data(df)
+        raw_data_display(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
