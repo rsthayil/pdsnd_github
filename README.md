@@ -16,8 +16,12 @@ Based on user input the code outputs the following info upon performing analysis
 * User info
 
 ### Files used
-Include the files used
+Files listed below are the raw files used to perform analysis.
+
+* _chicago.csv_
+* _washington.csv_
+* _new_york_city.csv_
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+All credit to the amazing instructors at **Udacity** for making complex subject easier to understand.
 
