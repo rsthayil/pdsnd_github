@@ -23,7 +23,7 @@ def get_filters():
     def city_input():
         valid_cities = ['chicago', 'new york city', 'washington']
         while True:
-            city = input("Please enter a city name (Chicago, New York City, Washington): ").lower()
+            city = input("Please enter a city name (Chicago, New York City, Washington): ").strip().lower()
             if city in valid_cities:
                 return city
             else:
@@ -35,7 +35,7 @@ def get_filters():
     def month_input():
         valid_months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
         while True:
-            month = input("Please enter a month (January, February, ... , June) or 'all' for all months: ").lower()
+            month = input("Please enter a month (January, February, ... , June) or 'all' for all months: ").strip().lower()
             if month in valid_months:
                 return month
             else:
@@ -48,7 +48,7 @@ def get_filters():
         valid_days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
         while True:
             day = input(
-                "Please enter a day of the week (Monday, Tuesday, ... , Sunday) or 'all' for all days: ").lower()
+                "Please enter a day of the week (Monday, Tuesday, ... , Sunday) or 'all' for all days: ").strip().lower()
             if day in valid_days:
                 return day
             else:
