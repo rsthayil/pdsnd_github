@@ -204,23 +204,6 @@ def user_stats(df):
     print('-' * 40)
 
 
-def display_raw_data(df):
-    """Displays 5 lines of raw data from the dataframe upon user request."""
-    start_loc = 0  # Start at the beginning of the dataframe
-    while True:
-        show_data = input("Would you like to see 5 lines of raw data? Enter yes or no: ").lower()
-        if show_data == 'yes':
-            end_loc = start_loc + 5  # Set the end location for slicing the dataframe
-            print(df.iloc[start_loc:end_loc])  # Display the next 5 rows from the dataframe
-            start_loc += 5  # Increment the start location for the next slice
-            if end_loc > len(df):
-                print("You've reached the end of the data.")
-                break
-        elif show_data == 'no':
-            break
-        else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
-
 
 def main():
     while True:
@@ -231,8 +214,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_raw_data(df)
-
+        
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
